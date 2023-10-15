@@ -113,7 +113,7 @@ export default function Home() {
             <p className="text-white py-2">Enter ETH Amount</p>
             <input
             disabled
-              className="w-full p-2 bg-gray-300 rounded-lg"
+              className="w-full disabled:cursor-not-allowed p-2 bg-gray-300 rounded-lg"
               placeholder="Amount"
               value={amount}
               onChange={(event) => setAmount(event.target.value)}
@@ -123,7 +123,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full">
-            <button disabled onClick={connectWallet} className="text-black opacity-40 bg-white w-full mb-2 disabled:cursor-default px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
+            <button disabled onClick={connectWallet} className="text-black opacity-40 bg-white w-full mb-2 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
               Connect Wallet
             </button>
             <button
@@ -133,7 +133,7 @@ export default function Home() {
                   ? true
                   : false
               }
-              className="text-black bg-white w-full disabled:opacity-40 disabled:cursor-default px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl"
+              className="text-black bg-white w-full disabled:opacity-40 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl"
             >
               {calculate(amount) > 500000
                 ? "Please buy less than max amount"
