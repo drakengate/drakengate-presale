@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
       const interval = setInterval(() => {
           if (progress < 100) {
-              setProgress(8.5);
+              setProgress(0);
           } else {
               clearInterval(interval);
           }
@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center   ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center  pb-8 ${inter.className}`}
     >
       <div className={young.className}>
         <Image src="/logodragontwo.png" width={180} height={180} />
@@ -99,19 +99,20 @@ export default function Home() {
         <div className={young.className}>
           <div className="flex flex-col text-center">
             <p className="text-white">
-              MAX BUY : <span className="text-lg"> 0.5 ETH</span>{" "}
+              MAX BUY : <span className="text-lg"> ?? ETH</span>{" "}
             </p>
             <p className="text-white">
-              MIN BUY : <span className="text-lg"> 0.01 ETH</span>{" "}
+              MIN BUY : <span className="text-lg"> ?? ETH</span>{" "}
             </p>
             <p className="text-white">
               PRESALE PRICE :{" "}
-              <span className="text-lg"> 1000 DRAKEN per 0.001 ETH</span>{" "}
+              <span className="text-lg"> 1000 DRAKEN per ?? ETH</span>{" "}
             </p>
           </div>
           <div className="pt-4 pb-2 w-full md:w-[450px] text-center flex flex-col justify-center">
             <p className="text-white py-2">Enter ETH Amount</p>
             <input
+            disabled
               className="w-full p-2 bg-gray-300 rounded-lg"
               placeholder="Amount"
               value={amount}
@@ -122,7 +123,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full">
-            <button onClick={connectWallet} className="text-black bg-white w-full mb-2 disabled:cursor-default px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
+            <button disabled onClick={connectWallet} className="text-black opacity-40 bg-white w-full mb-2 disabled:cursor-default px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
               Connect Wallet
             </button>
             <button
