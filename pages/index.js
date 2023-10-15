@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
       const interval = setInterval(() => {
           if (progress < 100) {
-              setProgress(0);
+              setProgress(3);
           } else {
               clearInterval(interval);
           }
@@ -89,30 +89,30 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center  pb-8 ${inter.className}`}
+      className={`flex min-h-screen tracking-widest flex-col items-center  pb-8 uppercase`}
     >
-      <div className={young.className}>
+      
         <Image src="/logodragontwo.png" width={180} height={180} />
-        <p className="text-3xl text-white pb-8"> Drakengate </p>
-      </div>
-      <div className={young.className}>
-      <div className="text-white text-lg px-4 md:text-2xl text-center py-2">!  The Community will decide to reveal presale  !</div></div>
+        <p className="text-3xl text-white pb-8 tracking-widest"> Drakengate </p>
+    
+      <div >
+      <div className="text-white tracking-widest text-lg px-4 md:text-2xl text-center py-2">!  The Community will decide to reveal presale  !</div></div>
       <div className="flex rounded-xl justify-start p-12 items-start border  w-full md:w-[550px] h-[600px] md:h-[600px]">
-        <div className={young.className}>
-          <div className="flex flex-col text-center">
+        <div>
+          <div className="flex tracking-widest flex-col text-center">
             <p className="text-white">
-              MAX BUY : <span className="text-lg"> ?? ETH</span>{" "}
+              MAX BUY : <span className="text-lg"> ?? $ETH</span>{" "}
             </p>
             <p className="text-white">
-              MIN BUY : <span className="text-lg"> ?? ETH</span>{" "}
+              MIN BUY : <span className="text-lg"> ?? $ETH</span>{" "}
             </p>
             <p className="text-white">
               PRESALE PRICE :{" "}
-              <span className="text-lg"> 1000 DRAKEN per ?? ETH</span>{" "}
+              <span className="text-lg"> 1000 DRAKEN per ?? $ETH</span>{" "}
             </p>
           </div>
-          <div className="pt-4 pb-2 w-full md:w-[450px] text-center flex flex-col justify-center">
-            <p className="text-white py-2">Enter ETH Amount</p>
+          <div className="pt-4 pb-2 tracking-widest w-full md:w-[450px] text-center flex flex-col justify-center">
+            <p className="text-white tracking-widest py-2">Enter $ETH Amount</p>
             <input
             disabled
               className="w-full disabled:cursor-not-allowed p-2 bg-gray-300 rounded-lg"
@@ -121,11 +121,11 @@ export default function Home() {
               onChange={(event) => setAmount(event.target.value)}
             ></input>
             <p className="text-white text-xl pt-4">
-              Total: {calculate(amount)} DRAKEN
+              Total: {calculate(amount)} $DRAKEN
             </p>
           </div>
-          <div className="w-full">
-            <button disabled onClick={connectWallet} className="text-black opacity-40 bg-white w-full mb-2 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
+          <div className="w-full ">
+            <button disabled onClick={connectWallet} className="text-black tracking-widest  uppercase opacity-40 bg-white w-full mb-2 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl">
               Connect Wallet
             </button>
             <button
@@ -135,7 +135,7 @@ export default function Home() {
                   ? true
                   : false
               }
-              className="text-black bg-white w-full disabled:opacity-40 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl"
+              className="text-black tracking-widest uppercase bg-white w-full disabled:opacity-40 disabled:cursor-not-allowed px-4 cursor-pointer py-3 flex justify-center items-center rounded-xl"
             >
               {calculate(amount) > 500000
                 ? "Please buy less than max amount"
@@ -144,7 +144,7 @@ export default function Home() {
                 : "Buy Now"}
             </button>
             <ProgressBar percentage={progress} />
-            <p className="text-xl text-center text-white">
+            <p className="tracking-widest text-xl text-center text-white">
              
              Remaining Time : 
             </p>

@@ -1,6 +1,12 @@
 import React from 'react';
 
 const ProgressBar = ({ percentage }) => {
+
+
+    function progress(){
+       return (percentage*50)/100
+    }
+
     return (
         <div className="relative pt-4">
             <div className="flex mb-2 items-center justify-between">
@@ -10,7 +16,7 @@ const ProgressBar = ({ percentage }) => {
                         {percentage}%
                     </span>
                     <span className="text-md font-semibold inline-block text-white">
-                        Goal: 50 ETH
+                        Goal: {(percentage*50)/100} / 50 ETH
                     </span>
                 </div>
             </div>

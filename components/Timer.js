@@ -33,7 +33,7 @@ const Timer = ({ initialDays = 10, initialHours = 0, initialMinutes = 0, initial
     }, [days, hours, minutes, seconds]);
 
     return (
-        <div className="pt-3 flex justify-center w-full rounded-md ">
+        <div className="tracking-widest pt-3 flex justify-center w-full rounded-md ">
             <span className="text-4xl font-bold text-white">{String(days).padStart(2, '0')}d</span>
             <span className="text-4xl font-bold text-white mx-2">{String(hours).padStart(2, '0')}h</span>
             <span className="text-4xl font-bold text-white">{String(minutes).padStart(2, '0')}m</span>
