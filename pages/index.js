@@ -95,6 +95,8 @@ export default function Home() {
         <Image src="/logodragontwo.png" width={180} height={180} />
         <p className="text-3xl text-white pb-8"> Drakengate </p>
       </div>
+      <div className={young.className}>
+      <div className="text-white text-2xl py-2">!  The Community will decide to reveal presale  !</div></div>
       <div className="flex rounded-xl justify-start p-12 items-start border w-[300px] md:w-[550px] h-[600px] md:h-[600px]">
         <div className={young.className}>
           <div className="flex flex-col text-center">
