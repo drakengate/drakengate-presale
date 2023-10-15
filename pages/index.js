@@ -96,8 +96,8 @@ export default function Home() {
         <p className="text-3xl text-white pb-8"> Drakengate </p>
       </div>
       <div className={young.className}>
-      <div className="text-white text-2xl py-2">!  The Community will decide to reveal presale  !</div></div>
-      <div className="flex rounded-xl justify-start p-12 items-start border w-[300px] md:w-[550px] h-[600px] md:h-[600px]">
+      <div className="text-white text-lg px-4 md:text-2xl text-center py-2">!  The Community will decide to reveal presale  !</div></div>
+      <div className="flex rounded-xl justify-start p-12 items-start border  w-full md:w-[550px] h-[600px] md:h-[600px]">
         <div className={young.className}>
           <div className="flex flex-col text-center">
             <p className="text-white">
