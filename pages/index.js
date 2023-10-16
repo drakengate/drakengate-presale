@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
       const interval = setInterval(() => {
           if (progress < 100) {
-              setProgress(3);
+              setProgress(0);
           } else {
               clearInterval(interval);
           }
