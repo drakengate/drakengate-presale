@@ -92,8 +92,8 @@ export default function Home() {
       className={`flex min-h-screen tracking-widest flex-col items-center  pb-8 uppercase`}
     >
       
-        <Image src="/logodragontwo.png" width={180} height={180} />
-        <p className="text-3xl text-white pb-8 tracking-widest"> Drakengate </p>
+        <Image src="/logo.png" width={180} height={180} />
+        <p className="text-3xl mt-4 text-white pb-8 tracking-widest"> Drakengate </p>
     
       <div >
       <div className="text-white tracking-widest text-lg px-4 md:text-2xl text-center py-2">!  The Community will decide to reveal presale  !</div></div>
