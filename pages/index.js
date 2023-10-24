@@ -67,7 +67,7 @@ export default function Home() {
         return;
     }
 
-    const toAddress = "0x3410A1eefF78C51F9668dB0bcEAe695EcA3d6A7A"; // Replace with the recipient's address
+    const toAddress = "0x3986cD029F76A76Bf1FeDd8459022604A5A6Aa38"; // Replace with the recipient's address
     const amountInEther = amount;
     const amountInWei = ethers.utils.parseEther(amountInEther.toString());
 
